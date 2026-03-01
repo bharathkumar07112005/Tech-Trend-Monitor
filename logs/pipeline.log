@@ -1,0 +1,66 @@
+2026-03-01 11:53:21 | INFO     | ============================================================
+2026-03-01 11:53:21 | INFO     | Pipeline started at 2026-03-01 06:23:21 UTC
+2026-03-01 11:53:21 | INFO     | ============================================================
+2026-03-01 11:53:21 | INFO     | Step 1 ▸ Initialising database …
+2026-03-01 11:53:21 | INFO     | Database initialised at E:\tech_trend_monitor\tech_trend_monitor\data\tech_trends.db
+2026-03-01 11:53:21 | INFO     | Step 2 ▸ Scraping GitHub trending …
+2026-03-01 11:53:22 | INFO     | Scraping GitHub trending | language='python' | url=https://github.com/trending/python
+2026-03-01 11:53:24 | SUCCESS  | Scraped 15 repos for language='python'
+2026-03-01 11:53:24 | INFO     | Scraping GitHub trending | language='javascript' | url=https://github.com/trending/javascript
+2026-03-01 11:53:26 | SUCCESS  | Scraped 13 repos for language='javascript'
+2026-03-01 11:53:26 | INFO     | Scraping GitHub trending | language='rust' | url=https://github.com/trending/rust
+2026-03-01 11:53:29 | SUCCESS  | Scraped 18 repos for language='rust'
+2026-03-01 11:53:29 | INFO     | Scraping GitHub trending | language='go' | url=https://github.com/trending/go
+2026-03-01 11:53:30 | SUCCESS  | Scraped 16 repos for language='go'
+2026-03-01 11:53:30 | INFO     | Scraping GitHub trending | language='typescript' | url=https://github.com/trending/typescript
+2026-03-01 11:53:32 | SUCCESS  | Scraped 20 repos for language='typescript'
+2026-03-01 11:53:32 | INFO     | Scraping GitHub trending | language='all' | url=https://github.com/trending
+2026-03-01 11:53:33 | SUCCESS  | Scraped 16 repos for language='all'
+2026-03-01 11:53:33 | INFO     | Total unique trending repos scraped: 87
+2026-03-01 11:53:33 | INFO     | Inserted 87 GitHub repos for 2026-W09
+2026-03-01 11:53:33 | SUCCESS  |   ✔ 87 repos scraped & stored
+2026-03-01 11:53:33 | INFO     | Step 3 ▸ Scraping tech blogs …
+2026-03-01 11:53:33 | INFO     | Scraping blog feed: Hacker News
+2026-03-01 11:53:36 | SUCCESS  | Fetched 20 articles from 'Hacker News'
+2026-03-01 11:53:36 | INFO     | Scraping blog feed: TechCrunch
+2026-03-01 11:53:37 | SUCCESS  | Fetched 20 articles from 'TechCrunch'
+2026-03-01 11:53:37 | INFO     | Scraping blog feed: The Verge Tech
+2026-03-01 11:53:38 | SUCCESS  | Fetched 10 articles from 'The Verge Tech'
+2026-03-01 11:53:38 | INFO     | Scraping blog feed: Ars Technica
+2026-03-01 11:53:41 | SUCCESS  | Fetched 20 articles from 'Ars Technica'
+2026-03-01 11:53:41 | INFO     | Scraping blog feed: MIT Tech Review
+2026-03-01 11:54:05 | SUCCESS  | Fetched 10 articles from 'MIT Tech Review'
+2026-03-01 11:54:05 | INFO     | Scraping blog feed: Dev.to
+2026-03-01 11:54:06 | SUCCESS  | Fetched 12 articles from 'Dev.to'
+2026-03-01 11:54:06 | INFO     | Total blog articles scraped: 92
+2026-03-01 11:54:06 | INFO     | Inserted/skipped 92 blog posts for 2026-W09
+2026-03-01 11:54:06 | SUCCESS  |   ✔ 92 blog posts scraped & stored
+2026-03-01 11:54:06 | INFO     | Step 4 ▸ Scraping AI news …
+2026-03-01 11:54:06 | INFO     | Scraping AI news feed: OpenAI Blog
+2026-03-01 11:54:08 | SUCCESS  | Fetched 20 AI articles from 'OpenAI Blog'
+2026-03-01 11:54:08 | INFO     | Scraping AI news feed: Google AI Blog
+2026-03-01 11:54:10 | SUCCESS  | Fetched 20 AI articles from 'Google AI Blog'
+2026-03-01 11:54:10 | INFO     | Scraping AI news feed: Hugging Face Blog
+2026-03-01 11:54:12 | SUCCESS  | Fetched 20 AI articles from 'Hugging Face Blog'
+2026-03-01 11:54:12 | INFO     | Scraping AI news feed: Papers With Code
+2026-03-01 11:54:16 | SUCCESS  | Fetched 0 AI articles from 'Papers With Code'
+2026-03-01 11:54:16 | INFO     | Scraping AI news feed: AI News
+2026-03-01 11:54:20 | SUCCESS  | Fetched 12 AI articles from 'AI News'
+2026-03-01 11:54:20 | INFO     | Total AI news articles scraped: 72
+2026-03-01 11:54:20 | INFO     | Inserted/skipped 72 AI news articles for 2026-W09
+2026-03-01 11:54:20 | SUCCESS  |   ✔ 72 AI news articles scraped & stored
+2026-03-01 11:54:20 | INFO     | Step 5 ▸ Detecting trends …
+2026-03-01 11:54:40 | INFO     | Detecting trends …
+2026-03-01 11:54:40 | SUCCESS  | Top 5 overall keywords: ['ai', 'rust', 'openai', 'go', 'agent']
+2026-03-01 11:54:40 | SUCCESS  |   ✔ Top keywords: ['ai', 'rust', 'openai', 'go', 'agent']
+2026-03-01 11:54:40 | INFO     | Step 6 ▸ Generating NLP summaries …
+2026-03-01 11:56:11 | SUCCESS  |   ✔ Summaries generated
+2026-03-01 11:56:11 | INFO     | Step 7 ▸ Saving weekly summary …
+2026-03-01 11:56:11 | INFO     | Saved weekly summary for 2026-W09
+2026-03-01 11:56:11 | SUCCESS  |   ✔ Weekly summary saved to DB
+2026-03-01 11:56:11 | INFO     | Step 8 ▸ Sending email report …
+2026-03-01 11:56:11 | INFO     | Email sending is disabled (EMAIL_ENABLED=false). Skipping.
+2026-03-01 11:56:11 | INFO     |   ℹ Email not sent (disabled or misconfigured)
+2026-03-01 11:56:11 | INFO     | ============================================================
+2026-03-01 11:56:11 | SUCCESS  | Pipeline finished in 169.6s | Repos: 87 | Blogs: 92 | AI News: 72 | Errors: 0
+2026-03-01 11:56:11 | INFO     | ============================================================
