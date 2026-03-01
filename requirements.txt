@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────
+# Tech Trend Monitor – Requirements
+# Python 3.10+
+# ─────────────────────────────────────────────
+
+# ── Web Scraping ──────────────────────────────
+requests==2.31.0
+beautifulsoup4==4.12.3
+feedparser==6.0.11          # RSS feed parsing
+lxml==5.1.0                 # Fast HTML/XML parser
+
+# ── Data Processing ───────────────────────────
+pandas==2.2.1
+numpy==1.26.4
+
+# ── NLP / Summarization ───────────────────────
+scikit-learn==1.4.2        # TF-IDF vectorizer
+nltk==3.8.1                  # Tokenization, stopwords
+# transformers==4.39.3       # Uncomment for advanced HuggingFace summarization
+# torch==2.2.1               # Required by transformers
+
+# ── Dashboard ─────────────────────────────────
+streamlit==1.32.0
+plotly==5.20.0
+altair==5.2.0
+
+# ── Database ──────────────────────────────────
+# sqlite3 is built into Python – no extra install needed
+
+# ── Scheduling ────────────────────────────────
+schedule==1.2.1
+
+# ── Utilities ─────────────────────────────────
+python-dotenv==1.0.1         # .env config loading
+loguru==0.7.2                # Pretty structured logging
+tenacity==8.2.3              # Retry decorator for scrapers
